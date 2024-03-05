@@ -1,0 +1,14 @@
+{
+	"name": "laBuenaRifa",
+	"script": "app.js",
+	"log_date_format": "YYYY-DD-MM HH:mm",
+	"watch": "true",
+	"ignore_watch": ["node_modules"],
+	"log_file": "./logs/combined.outerr.log",
+	"error_file": "./logs/err.log",
+	"out_file": "./logs/out.log",
+	"pid_file": "./logs/pid.log",
+	"env_production": {
+		"NODE_ENV": "production"
+	}
+}
