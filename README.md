@@ -17,3 +17,9 @@ Run the application.
 ```bash
 npm start
 ```
+
+Run the application in develop.
+
+```bash
+npm run dev
+```
