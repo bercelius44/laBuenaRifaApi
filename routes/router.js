@@ -6,7 +6,7 @@ const { check } = require("express-validator");
 const { checkInput, zeroPad, verifySession } = require("../utils/functions");
 
 // ROUTER FUNCTIONS IMPORTS
-const { notFound } = require("./router_functions");
+const { sendEmail, notFound } = require("./router_functions");
 
 // CODES IMPORT
 const codes = require("../utils/codes");
@@ -33,6 +33,14 @@ router.use((_, res, next) => {
 	res.setHeader("Content-Type", "application/json");
 	next();
 });
+
+router
+	.route("/api/email")
+	.post(
+		check("email", "Missing Parameter: email").exists(),
+		checkInput,
+		sendEmail
+	);
 
 router.route("/api/test").get((_, res) => {
 	res.status(200).json(codes.LBRC001);
