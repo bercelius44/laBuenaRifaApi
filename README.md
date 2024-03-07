@@ -23,3 +23,6 @@ Run the application in develop.
 ```bash
 npm run dev
 ```
+
+![image](https://github.com/bercelius44/laBuenaRifaApi/assets/25612415/5f43c1ea-b8fd-41a9-824e-b818b4722f61)
+
